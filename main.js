@@ -1,4 +1,4 @@
-import store, {adicionar, getItens} from "./store.js";
+import store, {adicionar, getItens, remover} from "./store.js";
 
 const form = document.forms.entrada;
 form.addEventListener('submit', envia);
@@ -15,7 +15,9 @@ function envia(e){
 }
 
 function remove(){
-    
+    console.log('Remove clickado!');
+    remover();
+    atualiza();
 }
 
 function atualiza(){

@@ -2,6 +2,7 @@ import store, {adicionar, getItens} from "./store.js";
 
 const form = document.forms.entrada;
 form.addEventListener('submit', envia);
+form.remover.addEventListener('click', remove);
 
 function envia(e){
     e.preventDefault();
@@ -11,6 +12,10 @@ function envia(e){
     form.valor.value = "";
     form.valor.focus();
     atualiza();
+}
+
+function remove(){
+    
 }
 
 function atualiza(){

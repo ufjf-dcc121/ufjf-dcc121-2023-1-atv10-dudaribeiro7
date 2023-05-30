@@ -1,0 +1,1 @@
+let estado = 0;
